@@ -10,7 +10,7 @@
 
 <body>
     <h2>Login</h2>
-    <form onsubmit="return login(document.getElementById('username').value, document.getElementById('password').value)">
+    <form onsubmit="login(event)">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
         <br>

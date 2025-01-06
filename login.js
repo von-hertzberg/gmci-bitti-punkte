@@ -5,9 +5,16 @@ const userData = {
     'testUser': 'password'
 };
 
-function login(username, password) {
-    if (userData[username] === password) {
-        window.location.href = 'index.html';
+function login(event) {
+    console.log(event);
+    event.preventDefault();
+
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+
+    if (userData[username] == password) {
+        window.location.replace('index.html');
+        console.log('Login successful');    
         return true
     } 
     alert('Invalid username or password.');
