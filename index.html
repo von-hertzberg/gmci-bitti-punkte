@@ -9,21 +9,79 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1>
+            Bitti Punkte 👉👈🥺
+        </h1>
+    </div>
+
     <div class="course-list" id="course-list">
     </div>
 
-    <div id="course-details">
+    <div class="course-details" id="course-details">
         <h2 id="course-name">No Course Selected</h2>
 
         <div class="assignment-info">
+            <h3>
+                Assignment name
+            </h3>
 
+            <span>
+
+            </span>
+
+            <ul>
+                <li>
+                    <a href="">Assignment1.pdf</a>
+                </li>
+                <li>
+                    <a href="">Assignment2.pdf</a>
+                </li>
+            </ul>
         </div>
 
-        <div class="assignment">
+        <div>
+            <h4>
+                Bisherige Abgaben
+            </h4>
 
+            <table>
+                <tr>
+                    <td>
+                        Assigment
+                    </td>
+                    <td>
+                        Zeit
+                    </td>
+                    <td>
+                        Datei
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> 1 </td>
+                    <td> 2.2.24 16:32 </td>
+                    <td><a href="">Abgabe.pdf</a></td>
+                </tr>
+
+                <tr>
+                    <td> 2 </td>
+                    <td> 9.2.24 16:32 </td>
+                    <td><a href="">Abgabe.pdf</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="file-submit" ondrop="onFileDrop(event)">
+            <div>Drop here</div>
+
+            <img src="drop-down-80.png">
+
+            <button>
+                Submit
+            </button>
         </div>
     </div>
 </body>
 
 </html>
-

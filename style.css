@@ -1,9 +1,39 @@
+* {
+    border-radius: 5pt;
+    padding: 2pt;
+}
+
+
+.header {
+    text-align: center;
+}
 
 .course-list {
-    list-style-type: none;
+    border-style: solid;
+    width: fit-content;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.course-details {
+    background-color: orange;
+    float: right;
+    width: 70%;
+    height: 100%;
 }
 
 .course-element {
+    margin: 10pt;
+    background-color: grey;
+}
+
+.file-submit {
     border-radius: 2;
     border: 2;
+    border-color: black;
+    border-style: solid;
+
+    height: fit-content;
+    width: fit-content;
 }

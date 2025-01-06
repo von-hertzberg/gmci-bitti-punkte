@@ -1,3 +1,9 @@
+class AssignmentInfo {
+    constructor(name) {
+
+    }
+}
+
 class CourseInfo {
 
     constructor(name) {
@@ -27,12 +33,17 @@ function loadCourses() {
 
         var element = document.createElement("div");
         element.textContent = course.name;
+        element.className = "course-element";
         element.onclick = ev => {
             selectCourse(course.name);
         };
 
         courseList.appendChild(element)
     });
+}
+
+function onFileDrop(ev) {
+    
 }
 
 document.addEventListener("DOMContentLoaded", (ev) => {
