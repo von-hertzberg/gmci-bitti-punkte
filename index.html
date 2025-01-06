@@ -57,29 +57,17 @@
                         Datei
                     </td>
                 </tr>
-
-                <tr>
-                    <td> 1 </td>
-                    <td> 2.2.24 16:32 </td>
-                    <td><a href="">Abgabe.pdf</a></td>
-                </tr>
-
-                <tr>
-                    <td> 2 </td>
-                    <td> 9.2.24 16:32 </td>
-                    <td><a href="">Abgabe.pdf</a></td>
-                </tr>
             </table>
         </div>
 
-        <div class="file-submit" ondrop="onFileDrop(event)">
+        <div class="file-submit" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)">
             <div>Drop here</div>
 
             <img src="drop-down-80.png">
 
-            <button onclick="onFileDrop(event)">
+            <!--button onclick="onFileDrop(event)">
                 Submit
-            </button>
+            </button-->
         </div>
     </div>
 </body>

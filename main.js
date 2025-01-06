@@ -44,9 +44,24 @@ function loadCourses() {
     });
 }
 
-function onFileDrop(ev) {
+function dropHandler(ev) {
+    console.log(ev)
     ev.preventDefault();
-    addSubmission("test.txt");
+
+    if (ev.dataTransfer.items) {
+        [...ev.dataTransfer.items].forEach((item, i) => {
+            if(item.kind === 'file') {
+                const file = item.getAsFile();
+                console.log(file);
+                console.log(file.name);
+                addSubmission(file.name);
+            }
+        });
+    }
+}
+
+function dragOverHandler(ev) {
+    ev.preventDefault();
 }
 
 function addSubmission(filename) {
