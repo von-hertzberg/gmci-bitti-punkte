@@ -1,0 +1,9 @@
+
+.course-list {
+    list-style-type: none;
+}
+
+.course-element {
+    border-radius: 2;
+    border: 2;
+}
