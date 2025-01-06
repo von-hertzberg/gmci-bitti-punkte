@@ -15,35 +15,27 @@
         </h1>
     </div>
 
-    <div class="course-list" id="course-list">
+    <div>
+        <h2>Kurse</h2>
+
+        <div class="course-list" id="course-list">
+        </div>
     </div>
 
     <div class="course-details" id="course-details">
         <h2 id="course-name">No Course Selected</h2>
 
-        <div class="assignment-info">
-            <h3>
-                Assignment name
-            </h3>
+        <div class="assignment">
+            <div class="assignment-info">
+                <h3> Assignment name </h3>
 
-            <span>
+                <span>
+                    Beschreibung
+                </span>
+            </div>
 
-            </span>
-
-            <ul>
-                <li>
-                    <a href="">Assignment1.pdf</a>
-                </li>
-                <li>
-                    <a href="">Assignment2.pdf</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="submissions">
-            <h4>
-                Bisherige Abgaben
-            </h4>
+            <div class="previous-submissions">
+                <h3> Bisherige Abgaben </h3>
 
             <table id="submissions-table">
                 <tr>
@@ -63,13 +55,16 @@
         <div class="file-submit" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)">
             <div>Drop here</div>
 
-            <img src="drop-down-80.png">
+                    <img src="drop-down-80.png">
 
             <!--button onclick="onFileDrop(event)">
                 Submit
             </button-->
         </div>
     </div>
+
+
+
 </body>
 
 </html>

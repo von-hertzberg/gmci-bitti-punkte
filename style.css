@@ -17,7 +17,7 @@
 }
 
 .course-details {
-    background-color: orange;
+    background-color: grey;
     float: right;
     width: 70%;
     height: 100%;
@@ -28,10 +28,22 @@
     background-color: grey;
 }
 
+.assignment {
+    display: flex;
+    margin-left: 4pt;
+}
+
+.assignment-info {
+    width: 30%;
+}
+
+.previous-submissions {
+    width: 30%;
+}
+
 .file-submit {
-    border-radius: 2;
-    border: 2;
-    border-color: black;
+    width: 30%;
+
     border-style: solid;
 
     height: fit-content;
